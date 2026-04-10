@@ -1,0 +1,6 @@
+services:
+   -type: web
+    name: trading-bot
+    runtime: python
+    buildCommand: pip install flask request gunicorn
+    startCommand: gunicorn app:app
